@@ -1,0 +1,14 @@
+uuid: cb341c5a-bfd4-4f7c-a963-d9cd473b78e1
+langcode: en
+status: true
+dependencies: {  }
+name: imagen250x250
+label: imagen250x250
+effects:
+  2a42e828-be76-4c39-8eba-c8fda1e29a69:
+    uuid: 2a42e828-be76-4c39-8eba-c8fda1e29a69
+    id: image_resize
+    weight: 1
+    data:
+      width: 250
+      height: 250

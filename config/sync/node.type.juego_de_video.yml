@@ -1,0 +1,18 @@
+uuid: 9d4fe102-6ac8-4a12-b719-8dec64f38d6c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Juego de video'
+type: juego_de_video
+description: 'Software de entretenimiento.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

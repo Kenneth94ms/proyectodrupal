@@ -1,0 +1,13 @@
+uuid: 7aa1d25a-c1e9-41f3-9c2b-b8335de0dc1c
+langcode: en
+status: true
+dependencies: {  }
+id: imagenes_media
+label: 'Imagenes media'
+description: 'Para poder cargas imagenes sin repetirlas, como una entidad.'
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map: {  }

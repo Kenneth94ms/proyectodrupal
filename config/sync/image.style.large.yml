@@ -15,3 +15,8 @@ effects:
       width: 480
       height: 480
       upscale: false
+  726f7afb-1233-4d96-9a89-2b070a64e3a0:
+    uuid: 726f7afb-1233-4d96-9a89-2b070a64e3a0
+    id: image_desaturate
+    weight: 2
+    data: {  }

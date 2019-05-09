@@ -1,0 +1,21 @@
+uuid: da654209-85e8-4839-8df5-9f5b559c46d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatag
+    - node.type.libros
+  module:
+    - metatag
+id: node.libros.field_metatag
+field_name: field_metatag
+entity_type: node
+bundle: libros
+label: Metatag
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

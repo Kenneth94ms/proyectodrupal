@@ -1,0 +1,21 @@
+uuid: 263e5428-bf89-4fba-9e57-beafb714d66f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_descripcion
+    - node.type.libros
+  module:
+    - text
+id: node.libros.field_descripcion
+field_name: field_descripcion
+entity_type: node
+bundle: libros
+label: Descripcion
+description: 'Es la descripcion breve del libro, como una sipnosis del mismo.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,27 @@
+uuid: 0e9b9472-d2ff-4c0c-9526-db4d15e74901
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_programa
+    - node.type.cursos
+  module:
+    - file
+id: node.cursos.field_programa
+field_name: field_programa
+entity_type: node
+bundle: cursos
+label: Programa
+description: 'Programa del curso en formato txt o pdf.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf'
+  max_filesize: '50 MB'
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

@@ -1,0 +1,22 @@
+uuid: 3623f587-16c3-4d10-8f81-f3f1cc03a16c
+langcode: en
+status: true
+dependencies: {  }
+name: portada
+label: 'Imagen Grande 1280x720'
+effects:
+  3de37fa4-6a74-478e-b48f-39aafe9d89ee:
+    uuid: 3de37fa4-6a74-478e-b48f-39aafe9d89ee
+    id: image_resize
+    weight: 1
+    data:
+      width: 1280
+      height: 720
+  843f0b0c-567f-44b3-aa9a-9f30cf953cab:
+    uuid: 843f0b0c-567f-44b3-aa9a-9f30cf953cab
+    id: image_rotate
+    weight: 2
+    data:
+      degrees: 0
+      bgcolor: ''
+      random: true

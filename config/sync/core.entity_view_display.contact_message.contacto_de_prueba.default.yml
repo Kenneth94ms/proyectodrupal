@@ -1,0 +1,32 @@
+uuid: 27d0aaa9-e5d0-44b4-83f6-366f06ab5628
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.contacto_de_prueba
+    - field.field.contact_message.contacto_de_prueba.field_imagen_contacto
+  module:
+    - image
+id: contact_message.contacto_de_prueba.default
+targetEntityType: contact_message
+bundle: contacto_de_prueba
+mode: default
+content:
+  field_imagen_contacto:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  message:
+    type: string
+    weight: 0
+    label: above
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

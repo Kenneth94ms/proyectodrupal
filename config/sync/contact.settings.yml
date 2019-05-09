@@ -1,4 +1,4 @@
-default_form: feedback
+default_form: contacto_de_prueba
 flood:
   limit: 5
   interval: 3600

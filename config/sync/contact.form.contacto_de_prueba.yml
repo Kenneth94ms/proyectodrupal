@@ -1,0 +1,12 @@
+uuid: 3bc8f9d9-ac9b-4ff0-ae69-0457887d4fa4
+langcode: en
+status: true
+dependencies: {  }
+id: contacto_de_prueba
+label: 'Contacto de Prueba'
+recipients:
+  - catalogo@yopmail.com
+reply: ''
+weight: 0
+message: 'Su correo ha sido enviado exitosamente, catalogando!'
+redirect: /node/5

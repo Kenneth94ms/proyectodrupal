@@ -1,0 +1,19 @@
+uuid: f50c338b-dbed-424a-bd39-3746e976d9d2
+langcode: en
+status: true
+dependencies: {  }
+name: imagen_pequena_480x360
+label: 'Imagen pequeña 480x360'
+effects:
+  7217f391-0c80-4a9e-9568-3e2abab29cc5:
+    uuid: 7217f391-0c80-4a9e-9568-3e2abab29cc5
+    id: image_resize
+    weight: 1
+    data:
+      width: 480
+      height: 360
+  b8ef42dc-fe61-4778-9fee-251908e71ccb:
+    uuid: b8ef42dc-fe61-4778-9fee-251908e71ccb
+    id: image_desaturate
+    weight: 2
+    data: {  }

@@ -1,0 +1,33 @@
+uuid: 45e71af1-85e0-4545-9b6b-be089c754718
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3a82a46e-c1d6-4f5c-9125-068d85769b8e'
+  module:
+    - block_content
+    - node
+  theme:
+    - bartik
+id: links
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:3a82a46e-c1d6-4f5c-9125-068d85769b8e'
+settings:
+  id: 'block_content:3a82a46e-c1d6-4f5c-9125-068d85769b8e'
+  label: Links
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      juego_de_video: juego_de_video
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,0 +1,23 @@
+uuid: 46d6addf-83a9-4aa5-bf71-91419cceb7d6
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact
+    - file
+id: contact_message.field_curriculum
+field_name: field_curriculum
+entity_type: contact_message
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,38 @@
+uuid: 5a2fcc5c-56cd-4e7e-ba90-9b3ee4a2602a
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.contacto_de_prueba
+    - field.storage.contact_message.field_imagen_contacto
+  module:
+    - image
+id: contact_message.contacto_de_prueba.field_imagen_contacto
+field_name: field_imagen_contacto
+entity_type: contact_message
+bundle: contacto_de_prueba
+label: 'Imagen contacto'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: 'png gif jpg jpeg'
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  max_resolution: ''
+  min_resolution: ''
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

@@ -1,0 +1,24 @@
+uuid: e58b17b8-2362-4abc-b264-42298bf52387
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-de-practica
+  module:
+    - system
+  theme:
+    - bartik
+id: menudepractica
+theme: bartik
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-de-practica'
+settings:
+  id: 'system_menu_block:menu-de-practica'
+  label: 'Menu de practica'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

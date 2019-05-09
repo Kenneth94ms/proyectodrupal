@@ -1,0 +1,27 @@
+uuid: 3bdd8215-d91e-420c-9539-04a53974d487
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.prueba
+    - field.storage.contact_message.field_curriculum
+  module:
+    - file
+id: contact_message.prueba.field_curriculum
+field_name: field_curriculum
+entity_type: contact_message
+bundle: prueba
+label: Curriculum
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

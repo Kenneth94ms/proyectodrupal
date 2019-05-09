@@ -1,0 +1,32 @@
+uuid: 29c7b218-fffe-450b-8955-2df4b729c44d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.listado_articulos
+  module:
+    - node
+    - views
+  theme:
+    - bartik
+id: views_block__listado_articulos_block_1
+theme: bartik
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'views_block:listado_articulos-block_1'
+settings:
+  id: 'views_block:listado_articulos-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,0 +1,24 @@
+uuid: 8ecf5819-48c2-47b9-8346-b6762b6cdad6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_autor
+    - node.type.libros
+  module:
+    - text
+id: node.libros.field_autor
+field_name: field_autor
+entity_type: node
+bundle: libros
+label: Autor
+description: 'Creador de la obra literaria.'
+required: true
+translatable: false
+default_value:
+  -
+    value: Desconocido
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text

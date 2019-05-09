@@ -1,0 +1,56 @@
+uuid: a55ea095-6bcd-4a5d-903a-61313d79a7ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.cursos.body
+    - field.field.node.cursos.field_categoria
+    - field.field.node.cursos.field_programa
+    - field.field.node.cursos.field_titulo
+    - node.type.cursos
+  module:
+    - file
+    - text
+id: node.cursos.default
+targetEntityType: node
+bundle: cursos
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_categoria:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_programa:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_titulo: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

@@ -1,0 +1,9 @@
+uuid: 88c0c2fb-a612-4b2d-9f81-686893787525
+langcode: en
+status: true
+dependencies: {  }
+name: Videojuego
+vid: videojuego
+description: 'tipo de videojuego segun presupuesto'
+hierarchy: 0
+weight: 0

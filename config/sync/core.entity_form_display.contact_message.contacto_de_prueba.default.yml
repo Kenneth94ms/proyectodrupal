@@ -1,0 +1,60 @@
+uuid: ade0a1ca-4b4c-4909-bda8-aa945a22eb47
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.contacto_de_prueba
+    - field.field.contact_message.contacto_de_prueba.field_imagen_contacto
+    - image.style.thumbnail
+  module:
+    - image
+id: contact_message.contacto_de_prueba.default
+targetEntityType: contact_message
+bundle: contacto_de_prueba
+mode: default
+content:
+  copy:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_imagen_contacto:
+    weight: 51
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  mail:
+    weight: -40
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  message:
+    type: string_textarea
+    weight: 0
+    settings:
+      rows: 12
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+  name:
+    weight: -50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  preview:
+    weight: 40
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  subject:
+    type: string_textfield
+    weight: -10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,51 @@
+uuid: 056d2a4c-70b6-4bf8-a82f-4fde94cc84f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.juego_de_video.body
+    - field.field.node.juego_de_video.field_img
+    - field.field.node.juego_de_video.field_vg
+    - image.style.imagen_pequena_480x360
+    - node.type.juego_de_video
+  module:
+    - image
+    - text
+    - user
+id: node.juego_de_video.teaser
+targetEntityType: node
+bundle: juego_de_video
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 0
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_img:
+    type: image
+    weight: 1
+    region: content
+    label: above
+    settings:
+      image_style: imagen_pequena_480x360
+      image_link: ''
+    third_party_settings: {  }
+  field_vg:
+    type: entity_reference_label
+    weight: 3
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

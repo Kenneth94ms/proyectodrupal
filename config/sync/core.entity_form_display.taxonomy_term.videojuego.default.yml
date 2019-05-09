@@ -1,0 +1,31 @@
+uuid: 3161e692-52ee-4954-a235-c1383660b9f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.videojuego
+  module:
+    - text
+id: taxonomy_term.videojuego.default
+targetEntityType: taxonomy_term
+bundle: videojuego
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  path: true

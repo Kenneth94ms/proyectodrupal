@@ -1,0 +1,9 @@
+uuid: a0755f20-fba2-48ee-bb77-ccef5794ffdc
+langcode: en
+status: true
+dependencies: {  }
+name: 'Generos literarios'
+vid: generos_literarios
+description: 'Calificacion de libros, segun el genero. '
+hierarchy: 0
+weight: 0

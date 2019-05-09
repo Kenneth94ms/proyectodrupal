@@ -1,0 +1,28 @@
+uuid: 4b4b59b5-c723-4107-a49b-63cc80fc156c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - bartik
+id: pagetitle
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+      juego_de_video: juego_de_video
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

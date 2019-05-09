@@ -1,0 +1,52 @@
+uuid: 7c748eaf-26ce-46b4-99e1-81615e10c6ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.imagenpractica01.field_media_image_1
+    - media.type.imagenpractica01
+  module:
+    - image
+    - user
+id: media.imagenpractica01.default
+targetEntityType: media
+bundle: imagenpractica01
+mode: default
+content:
+  created:
+    label: hidden
+    type: timestamp
+    weight: 0
+    region: content
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  field_media_image_1:
+    weight: 6
+    label: above
+    settings:
+      image_style: imagen760x420
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  thumbnail:
+    type: image
+    weight: 5
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    region: content
+    third_party_settings: {  }
+  uid:
+    label: hidden
+    type: author
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  name: true

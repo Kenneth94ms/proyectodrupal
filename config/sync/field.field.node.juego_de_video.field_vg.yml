@@ -1,0 +1,29 @@
+uuid: c1bd6991-a349-494b-a063-b2951b1c84fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vg
+    - node.type.juego_de_video
+    - taxonomy.vocabulary.videojuego
+id: node.juego_de_video.field_vg
+field_name: field_vg
+entity_type: node
+bundle: juego_de_video
+label: 'Tipo de videojuego'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      videojuego: videojuego
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: tags
+field_type: entity_reference

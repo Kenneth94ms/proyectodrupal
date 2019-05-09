@@ -1,0 +1,8 @@
+uuid: 859bc784-ade8-4aa9-b097-682339519401
+langcode: en
+status: true
+dependencies: {  }
+id: node__libros
+label: 'Content: Libros'
+tags:
+  title: current-date

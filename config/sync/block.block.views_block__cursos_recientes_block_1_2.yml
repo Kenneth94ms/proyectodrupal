@@ -1,0 +1,30 @@
+uuid: 1c91e870-123e-45cc-814d-8a23686fd2cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.cursos_recientes
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__cursos_recientes_block_1_2
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:cursos_recientes-block_1'
+settings:
+  id: 'views_block:cursos_recientes-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /cursos
+    negate: false
+    context_mapping: {  }

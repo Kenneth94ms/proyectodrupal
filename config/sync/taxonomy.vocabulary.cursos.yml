@@ -1,0 +1,9 @@
+uuid: c2b395e2-e28b-44b2-ac76-591f3f5eb1bf
+langcode: en
+status: true
+dependencies: {  }
+name: Cursos
+vid: cursos
+description: 'Cursos de carreras de las universidades.'
+hierarchy: 0
+weight: 0

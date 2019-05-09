@@ -6,12 +6,15 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
+    - field.field.node.article.field_metaarticulo
+    - field.field.node.article.field_prueba_media_imagenes
     - field.field.node.article.field_tags
     - image.style.thumbnail
     - node.type.article
   module:
     - comment
     - image
+    - metatag
     - path
     - text
 _core:
@@ -50,6 +53,18 @@ content:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
+  field_metaarticulo:
+    weight: 122
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
+  field_prueba_media_imagenes:
+    weight: 121
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_tags:
     type: entity_reference_autocomplete_tags
     weight: 3

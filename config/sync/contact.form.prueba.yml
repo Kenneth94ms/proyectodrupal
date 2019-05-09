@@ -1,0 +1,12 @@
+uuid: ce21dc87-6fea-45cd-9878-a19302d14e55
+langcode: en
+status: true
+dependencies: {  }
+id: prueba
+label: 'Form de prueba'
+recipients:
+  - ke94@yopmail.com
+reply: ''
+weight: 0
+message: 'Gracias por llenar este formulario.'
+redirect: /node/5

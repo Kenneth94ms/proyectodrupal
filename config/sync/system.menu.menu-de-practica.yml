@@ -1,0 +1,8 @@
+uuid: 368ad683-bb0c-4914-a18a-d682d72eae8f
+langcode: en
+status: true
+dependencies: {  }
+id: menu-de-practica
+label: 'Menu de practica'
+description: practica
+locked: false
