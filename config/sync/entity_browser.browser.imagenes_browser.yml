@@ -1,0 +1,42 @@
+uuid: 5bbf5c54-400b-4ee9-b16f-92b595a447ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.media_image_browser
+  module:
+    - views
+name: imagenes_browser
+label: 'Imagenes browser'
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select entities'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  23131f6a-ae36-42b3-a297-c114d4f50f86:
+    settings:
+      extensions: 'jpg jpeg png svg'
+      media_type: imagenes_media
+      upload_location: 'public://'
+      multiple: '1'
+      submit_text: 'Select files'
+    uuid: 23131f6a-ae36-42b3-a297-c114d4f50f86
+    weight: 1
+    label: IMage
+    id: media_image_upload
+  9af3ac7c-f2bf-4002-9e21-96023bcf7749:
+    settings:
+      view: media_image_browser
+      view_display: entity_browser_1
+      submit_text: 'Select entities'
+      auto_select: false
+    uuid: 9af3ac7c-f2bf-4002-9e21-96023bcf7749
+    weight: 2
+    label: 'view IMagen'
+    id: view
