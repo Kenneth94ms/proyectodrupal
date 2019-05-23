@@ -1,0 +1,21 @@
+uuid: 87d6439f-c649-44fb-a72e-b6f132d7c635
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.title_text_cta
+  module:
+    - text
+id: paragraph.title_text_cta.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: title_text_cta
+label: Texto
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

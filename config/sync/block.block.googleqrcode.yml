@@ -1,0 +1,30 @@
+uuid: 1708bfc4-db5e-4323-9640-eb38b594a76a
+langcode: en
+status: true
+dependencies:
+  module:
+    - google_qr_code
+    - node
+  theme:
+    - bartik
+id: googleqrcode
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'Google QR Code'
+settings:
+  id: 'Google QR Code'
+  label: 'Google QR Code'
+  provider: google_qr_code
+  label_display: visible
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      cursos: cursos
+      juego_de_video: juego_de_video
+      libros: libros
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

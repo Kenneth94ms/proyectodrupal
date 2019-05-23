@@ -6,6 +6,7 @@ dependencies:
     - entity_browser.browser.imagenes_browser
     - field.field.node.libros.body
     - field.field.node.libros.field_autor
+    - field.field.node.libros.field_components
     - field.field.node.libros.field_descripcion
     - field.field.node.libros.field_genero
     - field.field.node.libros.field_media_browser
@@ -14,6 +15,7 @@ dependencies:
   module:
     - entity_browser
     - metatag
+    - paragraphs
     - text
 id: node.libros.default
 targetEntityType: node
@@ -21,15 +23,27 @@ bundle: libros
 mode: default
 content:
   field_autor:
-    weight: 1
+    weight: 2
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: text_textfield
     region: content
+  field_components:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: title_text_cta
+    third_party_settings: {  }
+    region: content
   field_descripcion:
-    weight: 2
+    weight: 3
     settings:
       rows: 5
       placeholder: ''
@@ -37,13 +51,13 @@ content:
     type: text_textarea
     region: content
   field_genero:
-    weight: 3
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_media_browser:
-    weight: 27
+    weight: 6
     settings:
       entity_browser: imagenes_browser
       field_widget_display: label
@@ -57,7 +71,7 @@ content:
     type: entity_browser_entity_reference
     region: content
   field_metatag:
-    weight: 26
+    weight: 5
     settings: {  }
     third_party_settings: {  }
     type: metatag_firehose

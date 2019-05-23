@@ -5,12 +5,14 @@ dependencies:
   config:
     - field.field.node.libros.body
     - field.field.node.libros.field_autor
+    - field.field.node.libros.field_components
     - field.field.node.libros.field_descripcion
     - field.field.node.libros.field_genero
     - field.field.node.libros.field_media_browser
     - field.field.node.libros.field_metatag
     - node.type.libros
   module:
+    - entity_reference_revisions
     - metatag
     - text
     - user
@@ -22,27 +24,36 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 0
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     region: content
   field_autor:
-    weight: 1
-    label: above
+    weight: 2
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
-  field_descripcion:
-    weight: 2
+  field_components:
+    type: entity_reference_revisions_entity_view
+    weight: 0
     label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_descripcion:
+    weight: 3
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_genero:
-    weight: 3
-    label: above
+    weight: 4
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -50,16 +61,16 @@ content:
     region: content
   field_media_browser:
     type: entity_reference_entity_view
-    weight: 5
-    label: above
+    weight: 6
+    label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
     region: content
   field_metatag:
-    weight: 4
-    label: above
+    weight: 5
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: metatag_empty_formatter
