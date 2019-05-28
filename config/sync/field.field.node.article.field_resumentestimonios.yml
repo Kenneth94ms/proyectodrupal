@@ -1,0 +1,40 @@
+uuid: b6bd1c63-84a4-4a44-afc5-16610438fdd2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resumentestimonios
+    - node.type.article
+    - paragraphs.paragraphs_type.titulo_testimonio_testiminio
+  module:
+    - entity_reference_revisions
+id: node.article.field_resumentestimonios
+field_name: field_resumentestimonios
+entity_type: node
+bundle: article
+label: ResumenTestimonios
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      titulo_testimonio_testiminio: titulo_testimonio_testiminio
+    target_bundles_drag_drop:
+      titulo_testimonio_testiminio:
+        enabled: true
+        weight: 5
+      imagen_texto_autor:
+        weight: 6
+        enabled: false
+      title_text_and_image:
+        weight: 7
+        enabled: false
+      title_text_cta:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

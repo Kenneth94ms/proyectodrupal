@@ -1,0 +1,29 @@
+uuid: cbcd02e0-9918-4f9d-8575-ce1035c5b864
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.titulo_testimonio_testiminio.field_testimonior
+    - paragraphs.paragraphs_type.titulo_testimonio_testiminio
+  module:
+    - paragraphs
+id: paragraph.titulo_testimonio_testiminio.default
+targetEntityType: paragraph
+bundle: titulo_testimonio_testiminio
+mode: default
+content:
+  field_testimonior:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

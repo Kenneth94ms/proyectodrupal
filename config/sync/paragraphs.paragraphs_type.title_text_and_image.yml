@@ -1,0 +1,9 @@
+uuid: 39ebd434-6e2e-4bad-b41a-5a4a8beea3d5
+langcode: en
+status: true
+dependencies: {  }
+id: title_text_and_image
+label: 'Titulo, texto e imagen'
+icon_uuid: null
+description: 'Banner que puede ser agregado a todas las paginas.'
+behavior_plugins: {  }

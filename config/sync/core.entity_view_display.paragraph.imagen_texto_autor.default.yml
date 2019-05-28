@@ -1,0 +1,41 @@
+uuid: 39ac97a3-c830-48f4-8695-7927bc7d5c0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.imagen_texto_autor.field_autortesti
+    - field.field.paragraph.imagen_texto_autor.field_imagentesti
+    - field.field.paragraph.imagen_texto_autor.field_textotesti
+    - paragraphs.paragraphs_type.imagen_texto_autor
+  module:
+    - text
+id: paragraph.imagen_texto_autor.default
+targetEntityType: paragraph
+bundle: imagen_texto_autor
+mode: default
+content:
+  field_autortesti:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_imagentesti:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_textotesti:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

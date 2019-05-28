@@ -1,0 +1,19 @@
+uuid: 3c253130-49d5-46e5-90a8-117e45e2d29d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_autortesti
+    - paragraphs.paragraphs_type.imagen_texto_autor
+id: paragraph.imagen_texto_autor.field_autortesti
+field_name: field_autortesti
+entity_type: paragraph
+bundle: imagen_texto_autor
+label: AutorTesti
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

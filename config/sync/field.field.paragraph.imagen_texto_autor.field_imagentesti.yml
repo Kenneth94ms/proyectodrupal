@@ -1,0 +1,29 @@
+uuid: aeb55630-3a7d-499e-b5d1-20557b64d88e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_imagentesti
+    - media.type.imagenes_media
+    - paragraphs.paragraphs_type.imagen_texto_autor
+id: paragraph.imagen_texto_autor.field_imagentesti
+field_name: field_imagentesti
+entity_type: paragraph
+bundle: imagen_texto_autor
+label: ImagenTesti
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      imagenes_media: imagenes_media
+    sort:
+      field: mid
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: imagenpractica01
+field_type: entity_reference

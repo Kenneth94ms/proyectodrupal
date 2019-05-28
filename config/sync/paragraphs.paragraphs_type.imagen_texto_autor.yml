@@ -1,0 +1,9 @@
+uuid: 6d085b9a-359b-4d02-bc15-5c465d6502db
+langcode: en
+status: true
+dependencies: {  }
+id: imagen_texto_autor
+label: 'Imagen, texto, autor'
+icon_uuid: null
+description: 'Campo para crear testimonios.'
+behavior_plugins: {  }

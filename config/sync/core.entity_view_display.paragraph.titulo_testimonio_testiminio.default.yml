@@ -1,0 +1,24 @@
+uuid: 4c099b35-69fe-4bab-873a-c24104dac02b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.titulo_testimonio_testiminio.field_testimonior
+    - paragraphs.paragraphs_type.titulo_testimonio_testiminio
+  module:
+    - entity_reference_revisions
+id: paragraph.titulo_testimonio_testiminio.default
+targetEntityType: paragraph
+bundle: titulo_testimonio_testiminio
+mode: default
+content:
+  field_testimonior:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

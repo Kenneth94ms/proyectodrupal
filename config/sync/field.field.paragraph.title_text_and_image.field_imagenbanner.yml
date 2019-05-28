@@ -1,0 +1,29 @@
+uuid: db7758cd-eba4-4f45-9c4c-8d8dfdaaeb03
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_imagenbanner
+    - media.type.imagenes_media
+    - paragraphs.paragraphs_type.title_text_and_image
+id: paragraph.title_text_and_image.field_imagenbanner
+field_name: field_imagenbanner
+entity_type: paragraph
+bundle: title_text_and_image
+label: ImagenBanner
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      imagenes_media: imagenes_media
+    sort:
+      field: mid
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

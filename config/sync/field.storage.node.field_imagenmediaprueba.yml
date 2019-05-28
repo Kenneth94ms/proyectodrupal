@@ -1,0 +1,20 @@
+uuid: 60f5b4cd-7a97-494b-8387-40e4b1c0cc00
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_imagenmediaprueba
+field_name: field_imagenmediaprueba
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

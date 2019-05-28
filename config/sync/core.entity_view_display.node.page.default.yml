@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.page.body
     - field.field.node.page.field_componente
+    - field.field.node.page.field_imagenmediaprueba
     - node.type.page
   module:
     - entity_reference_revisions
@@ -31,6 +32,15 @@ content:
     settings:
       view_mode: default
       link: ''
+    third_party_settings: {  }
+    region: content
+  field_imagenmediaprueba:
+    type: entity_reference_entity_view
+    weight: 3
+    label: above
+    settings:
+      view_mode: default
+      link: false
     third_party_settings: {  }
     region: content
   links:

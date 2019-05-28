@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - views.view.media_image_browser
+    - views.view.media_entity_browser
   module:
     - views
 name: imagenes_browser
@@ -30,13 +30,13 @@ widgets:
     weight: 1
     label: IMage
     id: media_image_upload
-  9af3ac7c-f2bf-4002-9e21-96023bcf7749:
+  f09cc108-4745-4fea-96a6-83d2af693dce:
     settings:
-      view: media_image_browser
+      view: media_entity_browser
       view_display: entity_browser_1
       submit_text: 'Select entities'
       auto_select: false
-    uuid: 9af3ac7c-f2bf-4002-9e21-96023bcf7749
+    uuid: f09cc108-4745-4fea-96a6-83d2af693dce
     weight: 2
-    label: 'view IMagen'
+    label: view
     id: view

@@ -1,0 +1,9 @@
+uuid: 75d5236d-b2ff-417d-874e-8d54dccc9227
+langcode: en
+status: true
+dependencies: {  }
+name: MediaBrowser
+vid: mediabrowser
+description: 'Prueba para crear referencias.'
+hierarchy: 0
+weight: 0

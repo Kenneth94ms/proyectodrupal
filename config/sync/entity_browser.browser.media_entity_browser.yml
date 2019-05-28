@@ -21,13 +21,24 @@ selection_display_configuration: {  }
 widget_selector: tabs
 widget_selector_configuration: {  }
 widgets:
-  6586703a-6976-4124-8a49-cbb07ceaa3b1:
+  64079807-90bb-4eda-b845-0cc240d6db97:
+    settings:
+      extensions: 'jpg jpeg png gif'
+      media_type: imagenes_media
+      upload_location: 'public://'
+      multiple: '1'
+      submit_text: 'Select files'
+    uuid: 64079807-90bb-4eda-b845-0cc240d6db97
+    weight: 1
+    label: media_image_upload
+    id: media_image_upload
+  e3812a24-6ff9-484a-9e28-5e90b60fc09d:
     settings:
       view: media_entity_browser
       view_display: entity_browser_1
       submit_text: 'Select entities'
       auto_select: false
-    uuid: 6586703a-6976-4124-8a49-cbb07ceaa3b1
-    weight: 1
+    uuid: e3812a24-6ff9-484a-9e28-5e90b60fc09d
+    weight: 2
     label: view
     id: view
